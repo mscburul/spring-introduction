@@ -14,5 +14,6 @@ public class DemoApplication {
         BinarySearch binarySearch = applicationContext.getBean(BinarySearch.class);
 	    int result = binarySearch.binarySearch(new int[] {21,32,12},12);
         System.out.println(result);
+
 	}
 }

@@ -14,8 +14,10 @@ public class Hello {
     public String hello(@RequestParam (value = "surname",defaultValue = "Burul") String name){
         return "Hello World!" + name;
     }
-    @RequestMapping("/hello22")
-    public String hello2(){
-        return "Hi";
+    @RequestMapping("/hello/22")
+    public String hello2(@RequestParam (value = "id", defaultValue = "123456789") String id){
+        return id;
     }
+
+
 }
